@@ -1,0 +1,26 @@
+public class LinearSearch {
+    public static void search(Integer key) {
+        System.debug('Linear Search Started...');
+
+        Boolean found = false;
+        List<Integer> lon = new List<Integer>{3, 4, 5, 6};
+
+        System.debug('List: ' + lon);
+
+        for (Integer i = 0; i < lon.size(); i++) {
+            if (key == lon[i]) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            System.debug('Element Found: ' + key);
+        } else {
+            System.debug('Element Not Found: ' + key);
+        }
+    }
+}
+
+// Anonymous Window
+LinearSearch.search(10);
